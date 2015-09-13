@@ -4,8 +4,8 @@ Development image based on ubuntu/precise32
 Need [vagrant](https://www.vagrantup.com/downloads.html), provision - shell script, for windows compatibility.
 
 Recomeded vagrant plugins:
-    - [sahara](https://github.com/jedi4ever/sahara) - working with vm snapshot
-    - [vbguest](https://github.com/dotless-de/vagrant-vbguest) - for guest addons updating
+- [sahara](https://github.com/jedi4ever/sahara) - working with vm snapshot
+- [vbguest](https://github.com/dotless-de/vagrant-vbguest) - for guest addons updating
 
     # plugin installation
     vagrant plugin install sahara
