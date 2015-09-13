@@ -27,6 +27,6 @@ Buils fs:
 cd /opt/virt2real-sdk
 make fsconfig
 make kernelconfig
-make build
+time make build
 ```
 
