@@ -22,7 +22,7 @@ vagrant up
 vagrant ssh
 install_sdk.sh
 ```
-Buils fs:
+Builds fs:
 ```
 cd /opt/virt2real-sdk
 make fsconfig
