@@ -30,6 +30,9 @@ apt-get update && apt-get -y upgrade
 ${ECHO} "\033[1;34mInstall mc\033[0m"
 apt-get -y install mc
 
+${ECHO} "\033[1;34mInstall ntp\033[0m"
+apt-get -y install ntp
+
 ${ECHO} "\033[1;34mAdd /vagrant to the PATH\033[0m"
 VPATH="/vagrant:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 echo PATH=${VPATH} > /etc/environment

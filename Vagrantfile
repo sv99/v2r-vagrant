@@ -18,6 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       v.name = "v2rsdk_1"
       v.memory = 2048
       v.cpus = 2
+      v.customize ["modifyvm", :id, "--ioapic", "on"]
       # v.customize ["modifyvm", :id, "--cpuexecutioncap", "70"]
       v.gui = true # debug
   end
