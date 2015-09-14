@@ -1,10 +1,14 @@
 #!/bin/bash
 MY_ECHO='echo -e'
 
-${MY_ECHO} "\033[1;34minstall requiments 1\033[0m"
+${MY_ECHO} "\033[1;34mInstall requiments 1\033[0m"
 sudo apt-get -y install build-essential git subversion mercurial make flex bison gcc g++ gettext texinfo u-boot-tools
-${MY_ECHO} "\033[1;34minstall requiments 2\033[0m"
-sudo apt-get -y install ncurses-dev unzip groff bc dosfstools ccache
+${MY_ECHO} "\033[1;34mInstall requiments 2\033[0m"
+sudo apt-get -y install ncurses-dev unzip groff bc dosfstools
+
+${MY_ECHO} "\033[1;34mInstall ccache\033[0m"
+sudo apt-get -y install ccache
+ccache -m 5G
 
 ${MY_ECHO} "\033[1;34mMake /opt directory\033[0m"
 sudo mkdir /opt
