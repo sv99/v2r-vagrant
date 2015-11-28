@@ -47,9 +47,11 @@ vagrant up
 vagrant ssh
 install_sdk.sh
 ```
-Builds fs:
+
+Builds sdk:
 ```
 cd /opt/virt2real-sdk
+make defconfig
 make fsconfig
 make kernelconfig
 time make build

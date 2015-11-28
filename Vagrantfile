@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       v.cpus = 2
       v.customize ["modifyvm", :id, "--ioapic", "on"]
       # v.customize ["modifyvm", :id, "--cpuexecutioncap", "70"]
-      v.gui = true # debug
+      # v.gui = true # debug
   end
 
   config.vm.hostname = "v2rsdk"

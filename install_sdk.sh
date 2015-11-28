@@ -6,14 +6,6 @@ sudo apt-get -y install build-essential git subversion mercurial make flex bison
 ${MY_ECHO} "\033[1;34mInstall requiments 2\033[0m"
 sudo apt-get -y install ncurses-dev unzip groff bc dosfstools
 
-${MY_ECHO} "\033[1;34mInstall ccache\033[0m"
-sudo apt-get -y install ccache
-ccache -m 5G
-
-${MY_ECHO} "\033[1;34mMake /opt directory\033[0m"
-sudo mkdir /opt
-sudo chown vagrant /opt
-
 ${MY_ECHO} "\033[1;34mCorrect /bin/sh -> /bin/bash\033[0m"
 sudo rm /bin/sh
 sudo ln -s /bin/bash /bin/sh
