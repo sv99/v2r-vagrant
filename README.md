@@ -10,11 +10,8 @@ Need:
 Recomeded vagrant plugins:
 - [sahara](https://github.com/jedi4ever/sahara) - working with vm snapshot
 - [vbguest](https://github.com/dotless-de/vagrant-vbguest) - for guest addons updating
-```
-# plugin installation
-vagrant plugin install sahara
-vagrant plugin install vagrant-vbguest
-```
+
+## On Windows install git-scm
 
 On windows need install git-scm.
 
@@ -24,20 +21,27 @@ Configuring the line ending conversions: Need set to **Checkout as-is, commit as
 
 Before cloning check param core.autocrlf.
 
+## Prepare vagrant
+
+```
+vagrant plugin install sahara
+vagrant plugin install vagrant-vbguest
+```
+
 Run Git CMD:
 ```
 git config --global core.autocrlf
 >false
 ```
+
 Must be False, if not then run:
 ```
 git config --global core.autocrlf false
 ```
-Used precise32 vagrant box. Exist many ubuntu boxes.
-* hashicorp/precise32 current version 1.0.0 apt-get upgrade - 100Mb!
-* ubuntu/precise32 - updated, but need remove some packets
 
-Now used ubuntu/precise32.
+## up and install
+
+Now used ubuntu/trusty32 box, precise have some problems with https get certificate.
 
 For prepare vm run Git Bash terminal in working folder:
 ```
@@ -48,12 +52,18 @@ vagrant ssh
 install_sdk.sh
 ```
 
-Builds sdk:
+## Builds sdk
 ```
 cd /opt/virt2real-sdk
 make defconfig
 make fsconfig
 make kernelconfig
 time make build
+```
+
+## make image
+```
+make img_install
+make img_umount
 ```
 

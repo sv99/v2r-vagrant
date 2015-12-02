@@ -6,8 +6,9 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  # use an Ubuntu precise 32 base image
-  config.vm.box = "ubuntu/precise32"
+  # use an Ubuntu 32 base image
+  # config.vm.box = "ubuntu/precise32"
+  config.vm.box = "ubuntu/trusty32"
 
   # bridge the VM into the host machine's network
   # you'll be prompted to select a network adapter at startup
@@ -27,10 +28,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision "shell", path: "prep_ubuntu.sh",
     keep_color: true
-
-# wery bad outpput when downloading code sourcery and git clone!!
-#  config.vm.provision "shell", path: "install_sdk.sh",
-#    keep_color: true,
-#    privileged: false
 
 end
