@@ -1,5 +1,5 @@
 # v2r-vagrant
-Development image based on ubuntu/precise32
+Development image based on ubuntu/trusty32. ubuntu/precise32 have some problems with https get certificate.
 
 Need:
 - [vagrant](https://www.vagrantup.com/downloads.html), provision - shell script, for windows compatibility.
@@ -39,9 +39,7 @@ Must be False, if not then run:
 git config --global core.autocrlf false
 ```
 
-## up and install
-
-Now used ubuntu/trusty32 box, precise have some problems with https get certificate.
+## vagrant up and install
 
 For prepare vm run Git Bash terminal in working folder:
 ```
