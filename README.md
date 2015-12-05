@@ -1,5 +1,5 @@
 # v2r-vagrant
-Development image based on ubuntu/trusty32. ubuntu/precise32 have some problems with https get certificate.
+Development image based on ubuntu/trusty32, ubuntu/precise32 have some problems with https get certificate.
 
 Need:
 - [vagrant](https://www.vagrantup.com/downloads.html), provision - shell script, for windows compatibility.
